@@ -1,0 +1,25 @@
+{
+  "name": "my-grid",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "node-sass-chokidar": "^1.3.0",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-grid-layout": "^0.16.6",
+    "react-inlinesvg": "^0.8.1",
+    "react-jsonschema-form": "^1.0.3",
+    "react-scripts": "1.1.4",
+    "react-sidebar": "^2.3.2",
+    "react-skylight": "^0.5.1"
+  },
+  "scripts": {
+    "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
+    "watch-css": "npm run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "npm run build-css && react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {}
+}

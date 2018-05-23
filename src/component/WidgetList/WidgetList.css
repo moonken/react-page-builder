@@ -1,0 +1,17 @@
+.widget-list {
+  width: 100%; }
+
+.widget-card {
+  margin: 0 6px;
+  height: 120px;
+  text-align: center;
+  width: 30%;
+  background-color: darkseagreen;
+  display: inline-block; }
+  .widget-card .widget-content {
+    position: relative;
+    top: 50%;
+    transform: perspective(1px) translateY(-50%); }
+    .widget-card .widget-content .icon svg {
+      width: 30px;
+      height: 30px; }
